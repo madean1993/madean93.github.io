@@ -3,116 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب الأصدقاء - Host</title>
+    <title>مكتب الأصدقاء - خدمات الألعاب</title>
     <style>
         * {
-            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
         }
-
         body {
-            background-color: #0b0f19; /* خلفية داكنة فخمة */
-            color: #ffffff;
+            background-color: #0b0f19;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
+            align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 10px;
+        }
+        .img-container {
+            width: 100%;
+            max-width: 1200px;
             text-align: center;
         }
-
-        .container {
+        .img-container img {
             width: 100%;
-            max-width: 600px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* تنسيق البانر / الصورة لتظهر كاملة وبشكل ممتاز */
-        .banner {
-            width: 100%;
-            max-width: 500px;
             height: auto;
-            max-height: 250px;
-            object-fit: contain; /* يضمن عدم قص أي جزء من الصورة */
+            display: block;
             border-radius: 12px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-            display: block;
-        }
-
-        h1 {
-            color: #00d2ff;
-            font-size: 26px;
-            margin-bottom: 10px;
-            text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
-        }
-
-        .phone {
-            color: #00ff88;
-            font-size: 20px;
-            margin-bottom: 25px;
-            direction: ltr;
-            font-weight: bold;
-        }
-
-        .links-container {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .btn {
-            background: linear-gradient(135deg, #0072ff, #00c6ff);
-            color: #ffffff;
-            padding: 14px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(0, 114, 255, 0.6);
-        }
-
-        .footer {
-            margin-top: 40px;
-            color: #8b949e;
-            font-size: 14px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- البانر المخصص لمكتب الأصدقاء (يجب رفع ملف banner.jpg بنفس الاسم في المستودع) -->
-        <img src="banner.jpg" alt="مكتب الأصدقاء" class="banner" onerror="this.style.display='none'">
-
-        <!-- العنوان ورقم التواصل -->
-        <h1>مكتب الأصدقاء لخدمات الألعاب</h1>
-        <div class="phone">📞 07740935910</div>
-
-        <!-- الأزرار والمواقع -->
-        <div class="links-container">
-            <a href="https://raw13g.github.io/" class="btn" target="_blank">🎮 استضافة Raw13g للتهكير</a>
-        </div>
-
-        <!-- الحقوق -->
-        <div class="footer">
-            جميع الحقوق محفوظة © مكتب الأصدقاء 2026
-        </div>
+    <div class="img-container">
+        <img src="background.jpg" alt="مكتب الأصدقاء">
     </div>
 
 </body>
 </html>
-
