@@ -2,22 +2,94 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>صفحة البلايستيشن الخاصة بي</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتب الأصدقاء - PS4 Host</title>
     <style>
         body {
-            background-color: #121212;
+            background-color: #0b0f19;
             color: #ffffff;
-            font-family: Tahoma, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             text-align: center;
-            padding-top: 100px;
+            padding: 20px;
+            margin: 0;
         }
+        
+        .banner {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 12px;
+            border: 3px solid #0070d1;
+            box-shadow: 0 0 20px rgba(0, 112, 209, 0.5);
+            margin-bottom: 20px;
+        }
+
         h1 {
-            color: #0070d1;
+            color: #58a6ff;
+            font-size: 26px;
+            margin-bottom: 5px;
+            text-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+        }
+
+        .phone {
+            color: #3fb950;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn {
+            background-color: #1f6feb;
+            color: #ffffff;
+            padding: 16px 28px;
+            font-size: 19px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(31, 111, 235, 0.4);
+            transition: all 0.3s ease;
+            width: 85%;
+            max-width: 360px;
+            display: block;
+        }
+
+        .btn:hover {
+            background-color: #388bfd;
+            box-shadow: 0 6px 18px rgba(56, 139, 253, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            margin-top: 40px;
+            color: #8b949e;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>أهلاً بك في صفحتي الشخصية على PS4</h1>
-    <p>تم رفع هذه الصفحة بنجاح عبر GitHub Pages!</p>
+
+    <!-- البانر المخصص لمكتب الأصدقاء -->
+    <img src="banner.jpg" alt="مكتب الأصدقاء بانر" class="banner">
+
+    <!-- العنوان ورقم التواصل -->
+    <h1>مكتب الأصدقاء لخدمات الألعاب</h1>
+    <div class="phone">📞 07740935910</div>
+    
+    <!-- الأزرار والمواقع -->
+    <div class="links-container">
+        <!-- زر موقع التعديل Raw13g -->
+        <a href="https://raw13g.github.io/" class="btn" target="_blank">🎮 استضافة Raw13g للتهكير</a>
+    </div>
+
+    <div class="footer">
+        جميع الحقوق محفوظة © مكتب الأصدقاء 2026
+    </div>
+
 </body>
 </html>
