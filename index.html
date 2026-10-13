@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب الأصدقاء - تهكير إصدارات البلايستيشن</title>
+    <title>مكتب الأصدقاء - خدمات الألعاب والتهكير</title>
     <style>
         * {
             margin: 0;
@@ -20,21 +20,23 @@
             padding: 15px;
             min-height: 100vh;
         }
-        .img-container {
+        .header-container {
             width: 100%;
             max-width: 1000px;
-            margin-bottom: 20px;
             text-align: center;
+            margin-bottom: 20px;
         }
-        .img-container img {
+        /* عرض البانر مع العنوان والعنوان الفرعي وأرقام الهواتف التي صممناها */
+        .banner-img {
             width: 100%;
             height: auto;
             border-radius: 12px;
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+            display: block;
         }
-        .title {
+        .section-title {
             font-size: 20px;
-            margin-bottom: 15px;
+            margin: 20px 0 15px 0;
             color: #00d4ff;
             text-align: center;
         }
@@ -69,14 +71,15 @@
 </head>
 <body>
 
-    <!-- عرض صورة البانر الرئيسية (مطابقة لامتداد الحروف الكبيرة للـ JPG) -->
-    <div class="img-container">
-        <img src="background.JPG" alt="مكتب الأصدقاء">
+    <!-- قسم البانر (يحمل الصورة التي تحتوي على تفاصيل العنوان والهواتف) -->
+    <div class="header-container">
+        <img src="background.JPG" alt="مكتب الأصدقاء - الدواسة عمارة القدس" class="banner-img">
     </div>
 
-    <h2 class="title">اختر الإصدار المطلوب للتهكير:</h2>
+    <!-- عنوان قسم اختيار الإصدارات -->
+    <h2 class="section-title">اختر الإصدار المطلوب للتهكير:</h2>
 
-    <!-- أزرار الإصدارات -->
+    <!-- أزرار الأنظمة والإصدارات -->
     <div class="systems-grid">
         <a href="#" class="btn">⚡ تهكير نظام 10.00</a>
         <a href="#" class="btn">⚡ تهكير نظام 11.00</a>
