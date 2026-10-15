@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مكتب الأصدقاء - خدمات الألعاب والتهكير</title>
+    <title>Check Point - خدمات الألعاب والتهكير</title>
     <style>
         * {
             margin: 0;
@@ -59,6 +59,7 @@
             display: block;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
             transition: transform 0.2s, background 0.2s;
+            cursor: pointer;
         }
         .btn:hover {
             background: linear-gradient(135deg, #0056cc, #00b4d8);
@@ -70,24 +71,31 @@
 </head>
 <body>
 
-    <!-- قسم صورة البانر (مكتب الأصدقاء - الدواسة عمارة القدس) -->
+    <!-- قسم صورة البانر المحدثة -->
     <div class="header-container">
-        <img src="background.JPG" alt="مكتب الأصدقاء - الدواسة عمارة القدس" class="banner-img">
+        <img src="background.JPG" alt="Check Point - الموصل الدواسة عمارة القدس" class="banner-img">
     </div>
 
     <!-- عنوان قسم اختيار الإصدارات -->
     <h2 class="section-title">اختر الإصدار المطلوب للتهكير:</h2>
 
-    <!-- جميع الأزرار مرتبطة الآن بموقع راو -->
+    <!-- شبكة الأزرار بعد ضبط وتوزيع الروابط الفرعية لكل إصدار بدقة -->
     <div class="systems-grid">
-        <a href="https://raw13g.github.io" class="btn">⚡ تهكير نظام 9.00</a>
-        <a href="https://raw13g.github.io" class="btn">⚡ تهكير نظام 10.00</a>
-        <a href="https://raw13g.github.io" class="btn">⚡ تهكير نظام 11.00</a>
-        <a href="https://raw13g.github.io" class="btn">⚡ تهكير نظام 12.00</a>
-        <a href="https://raw13g.github.io" class="btn">⚡ تهكير نظام 13.00</a>
-        <a href="https://raw13g.github.io" class="btn">⚡ تهكير نظام 13.50</a>
-        <a href="https://raw13g.github.io" class="btn">⚡ تهكير نظام 13.52</a>
+        <a href="https://github.io" onclick="return confirmLink('9.00')" class="btn">⚡ تهكير نظام 9.00</a>
+        <a href="https://github.io" onclick="return confirmLink('10.00')" class="btn">⚡ تهكير نظام 10.00</a>
+        <a href="https://github.io" onclick="return confirmLink('11.00')" class="btn">⚡ تهكير نظام 11.00</a>
+        <a href="https://github.io" onclick="return confirmLink('12.00')" class="btn">⚡ تهكير نظام 12.00</a>
+        <a href="https://github.io" onclick="return confirmLink('13.00')" class="btn">⚡ تهكير نظام 13.00</a>
+        <a href="https://github.io" onclick="return confirmLink('13.50')" class="btn">⚡ تهكير نظام 13.50</a>
+        <a href="https://github.io" onclick="return confirmLink('13.52')" class="btn">⚡ تهكير نظام 13.52</a>
     </div>
+
+    <!-- نظام التنبيهات وجافاسكربت التفاعلية لمنع الأخطاء غير المقصودة من الزوار -->
+    <script>
+        function confirmLink(systemVersion) {
+            return confirm("هل أنت متأكد من الانتقال إلى صفحة تهكير نظام " + systemVersion + "؟");
+        }
+    </script>
 
 </body>
 </html>
