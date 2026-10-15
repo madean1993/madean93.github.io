@@ -3,99 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Point - خدمات الألعاب والتهكير والصيانة</title>
+    <title>موقع الألعاب</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
         body {
-            background-color: #0b0f19;
+            font-family: Tahoma, sans-serif;
+            background-color: #121212;
             color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 15px;
-            min-height: 100vh;
-        }
-        .header-container {
-            width: 100%;
-            max-width: 1000px;
             text-align: center;
-            margin-bottom: 20px;
+            margin: 0;
+            padding: 50px;
         }
-        .banner-img {
-            width: 100%;
-            height: auto;
-            border-radius: 12px;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
-            display: block;
+        h1 {
+            color: #00ff88;
         }
-        .section-title {
-            font-size: 20px;
-            margin: 20px 0 15px 0;
-            color: #00d4ff;
-            text-align: center;
-        }
-        .systems-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-            width: 100%;
-            max-width: 1000px;
+        .game-banner {
+            width: 80%;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            margin: 20px 0;
         }
         .btn {
-            background: linear-gradient(135deg, #0072ff, #00d4ff);
-            color: white;
-            padding: 16px 20px;
-            font-size: 18px;
-            font-weight: bold;
-            border: none;
-            border-radius: 10px;
+            display: inline-block;
+            background-color: #00ff88;
+            color: #121212;
+            padding: 12px 25px;
             text-decoration: none;
-            text-align: center;
-            display: block;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-            transition: transform 0.2s, background 0.2s;
-            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: 0.3s;
         }
         .btn:hover {
-            background: linear-gradient(135deg, #0056cc, #00b4d8);
-        }
-        .btn:active {
-            transform: scale(0.98);
+            background-color: #00cc6a;
         }
     </style>
 </head>
 <body>
 
-    <!-- قسم صورة البانر الاحترافية والجديدة لـ Check Point -->
-    <div class="header-container">
-        <img src="background.JPG" alt="Check Point - الموصل الدواسة عمارة القدس" class="banner-img">
+    <h1>مرحباً بك في موقع الألعاب الخاص بي</h1>
+    <p>هنا تظهر صورة اللعبة أو الغلاف الجديد:</p>
+
+    <!-- ضع اسم الصورة الجديدة هنا -->
+    <img src="اسم_الصورة_الجديدة.png" alt="صورة اللعبة" class="game-banner">
+
+    <div>
+        <br>
+        <a href="#" class="btn">ابدأ اللعب الآن</a>
     </div>
-
-    <!-- عنوان قسم اختيار الإصدارات -->
-    <h2 class="section-title">اختر الإصدار المطلوب للتهكير:</h2>
-
-    <!-- شبكة الأزرار الموجهة بالكامل إلى رابط موقعك المباشر والجديد -->
-    <div class="systems-grid">
-        <a href="https://github.io" onclick="return confirmLink('9.00')" class="btn">⚡ تهكير نظام 9.00</a>
-        <a href="https://github.io" onclick="return confirmLink('10.00')" class="btn">⚡ تهكير نظام 10.00</a>
-        <a href="https://github.io" onclick="return confirmLink('11.00')" class="btn">⚡ تهكير نظام 11.00</a>
-        <a href="https://github.io" onclick="return confirmLink('12.00')" class="btn">⚡ تهكير نظام 12.00</a>
-        <a href="https://github.io" onclick="return confirmLink('13.00')" class="btn">⚡ تهكير نظام 13.00</a>
-        <a href="https://github.io" onclick="return confirmLink('13.50')" class="btn">⚡ تهكير نظام 13.50</a>
-        <a href="https://github.io" onclick="return confirmLink('13.52')" class="btn">⚡ تهكير نظام 13.52</a>
-    </div>
-
-    <!-- نظام التنبيهات البرمجية للتفاعل مع زوار موقعك -->
-    <script>
-        function confirmLink(systemVersion) {
-            return confirm("هل أنت متأكد من الانتقال إلى صفحة تهكير نظام " + systemVersion + "؟");
-        }
-    </script>
 
 </body>
 </html>
